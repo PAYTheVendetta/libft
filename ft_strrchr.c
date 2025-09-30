@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:48:27 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/29 19:54:18 by aitor            ###   ########.fr       */
+/*   Updated: 2025/09/30 12:38:31 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strrchr(const char *s, int c)
 	if (c == '\0')
 	{
 		i = n;
-		return (&s[i]);
+		return (&s[i + 1]);
 	}
 	return (0);
 }
