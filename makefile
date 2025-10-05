@@ -3,21 +3,41 @@
 #                                                         :::      ::::::::    #
 #    makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aitor <aitor@student.42.fr>                +#+  +:+       +#+         #
+#    By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/08/07 13:18:47 by aitor             #+#    #+#              #
-#    Updated: 2025/08/07 13:25:06 by aitor            ###   ########.fr        #
+#    Created: 2025/08/07 13:18:47 by aialonso          #+#    #+#              #
+#    Updated: 2025/10/02 18:58:27 by aialonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-$(NAME)
+NAME = libft.a
 
-all
+SOURCES =  ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_strchr.c ft_isascii.c ft_isprint.c ft_strrchr.c\
+	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c
 
-clean
+FLAGS = -Wall -Wextra -Werror
 
-fclaen
+OBJECTS= $(SOURCES:.c=.o)
 
-re
+all: $(NAME)
 
-bonus
+$(NAME):$(OBJECTS)
+	ar rcs $(NAME) $(OBJECTS)
+
+%.o: %.c
+	$(CC) $(FLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJECTS)
+	
+cleanb:
+	rm -f $(OBJECTS)
+	
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all cleanb
+
+comp: re
+	$(CC) main.c $(NAME)  -o librari
+	./librari

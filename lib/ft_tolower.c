@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 19:33:15 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/16 19:44:17 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/01 12:31:09 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_tolower(int c)
 {
@@ -19,11 +17,11 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-int	main(void)
-{
-	char	b;
+// int	main(void)
+// {
+// 	char	b;
 
-	b = ft_tolower('Z');
-	write(1, &b, 1);
-	return (0);
-}
+// 	b = ft_tolower('Z');
+// 	write(1, &b, 1);
+// 	return (0);
+// }

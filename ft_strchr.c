@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/21 15:43:49 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/21 16:12:01 by aitor            ###   ########.fr       */
+/*   Created: 2025/08/21 15:43:49 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/02 16:44:05 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+//Busca en una cadena el primer
+//carácter que encuentre 
+//y devuelve la posición de ese carácter; si no, devuelve cero.
+
+const char	*ft_strchr(const char *s, int c)
 {
 	int	n;
 

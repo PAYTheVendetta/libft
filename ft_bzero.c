@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 13:51:53 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/09 13:54:35 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 18:27:26 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Se encarga de rellenar un array con ceros.
 
 void	ft_bzero(void *s, unsigned long n)
 {

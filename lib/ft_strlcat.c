@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/12 17:54:02 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/15 19:13:37 by aitor            ###   ########.fr       */
+/*   Created: 2025/08/12 17:54:02 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/01 15:57:26 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,10 @@ unsigned long	ft_strlcat(char *dst, const char *src, unsigned long dstsize)
 		i++;
 	}
 	if (dstsize != 0 && !(dstsize <= n))
+	{
 		if (dst[dstsize - 1] != '\0')
 			dst[dstsize - 1] = '\0';
+	}
 	else if (dstsize <= n)
 		return (dstsize + i);
 	return (n + i);

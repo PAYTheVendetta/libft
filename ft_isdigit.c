@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:21:59 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/07 20:31:17 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 16:36:59 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//Te dice si es un número; si no, te devuelve cero.
 
 int	ft_isdigit(int c)
 {
@@ -19,8 +19,8 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_isdigit('a'));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_isdigit('a'));
+// 	return (0);
+// }

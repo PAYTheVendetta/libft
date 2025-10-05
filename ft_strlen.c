@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:46:09 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/08 14:52:19 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 17:16:27 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//Cuenta cuántos caracteres tiene una cadena y devuelves ese número.
 
 unsigned long	ft_strlen(const char *s)
 {
@@ -27,8 +27,8 @@ unsigned long	ft_strlen(const char *s)
 	return (cont);
 }
 
-int	main(void)
-{
-	printf("%ld", ft_strlen("hola"));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%ld", ft_strlen("hola"));
+// 	return (0);
+// }

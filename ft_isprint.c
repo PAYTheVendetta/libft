@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:41:01 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/07 20:56:03 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 16:37:35 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//Te dice si es un carácter printable; si no, te devuelve cero.
 
 int	ft_isprint(int c)
 {
@@ -19,8 +19,8 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_isprint('6'));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_isprint('6'));
+// 	return (0);
+// }

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:37:02 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/07 20:40:32 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 16:36:29 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//Te dice si está en la tabla ASCII; si no, te devuelve cero.
 
 int	ft_isascii(int c)
 {
@@ -19,8 +19,8 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_isascii(128));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_isascii(128));
+// 	return (0);
+// }

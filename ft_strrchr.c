@@ -5,12 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/29 19:48:27 by aitor             #+#    #+#             */
-/*   Updated: 2025/09/30 12:38:31 by aialonso         ###   ########.fr       */
+/*   Created: 2025/08/29 19:48:27 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/02 16:44:57 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *s, int c)
+//Busca en una cadena el último carácter que encuentre
+//y devuelve la posición de ese carácter; si no, devuelve cero.
+
+const char	*ft_strrchr(const char *s, int c)
 {
 	int	n;
 	int	i;

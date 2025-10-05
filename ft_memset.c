@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:21:40 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/10 01:04:35 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 18:01:34 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
-// #include <unistd.h>
+//Se encarga de rellenar un array con caracteres.
 
 void	*ft_memset(void *b, int c, unsigned long len)
 {

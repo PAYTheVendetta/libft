@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 16:41:46 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/07 17:15:46 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 16:34:07 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//Te dice si es un carácter, si no, te devuelve cero.
 
 int	ft_isalpha(int c)
 {
@@ -19,8 +19,8 @@ int	ft_isalpha(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_isalpha('6'));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_isalpha('6'));
+// 	return (0);
+// }

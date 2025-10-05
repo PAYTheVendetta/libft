@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
+/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:34:24 by aitor             #+#    #+#             */
-/*   Updated: 2025/08/07 20:36:13 by aitor            ###   ########.fr       */
+/*   Updated: 2025/10/02 16:33:10 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//Te dice si es un dígito o un carácter, si no te devuelve cero.
 
 int	ft_isalnum(int c)
 {
@@ -21,8 +21,8 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-int	main(void)
-{
-	printf("%d", ft_isalnum(' '));
-	return (0);
-}
+// int	main(void)
+// {
+// 	printf("%d", ft_isalnum(' '));
+// 	return (0);
+// }
