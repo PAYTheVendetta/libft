@@ -6,9 +6,11 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 19:33:15 by aitor             #+#    #+#             */
-/*   Updated: 2025/10/01 12:31:09 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/06 17:36:17 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Convierten los caracteres que están en mayúsculas en minúsculas.
 
 int	ft_tolower(int c)
 {

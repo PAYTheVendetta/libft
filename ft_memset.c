@@ -6,16 +6,18 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:21:40 by aitor             #+#    #+#             */
-/*   Updated: 2025/10/02 18:01:34 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/06 13:18:47 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Se encarga de rellenar un array con caracteres.
 
-void	*ft_memset(void *b, int c, unsigned long len)
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned long	n;
-	char			*y;
+	size_t	n;
+	char	*y;
 
 	n = 0;
 	y = (char *)b;

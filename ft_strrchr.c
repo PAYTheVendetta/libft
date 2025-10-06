@@ -6,7 +6,7 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:48:27 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/02 16:44:57 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:31:15 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,18 +19,19 @@ const char	*ft_strrchr(const char *s, int c)
 	int	i;
 
 	n = 0;
+	i = -1;
 	while (s[n])
 	{
-		if (s[n] == c)
+		if (s[n] == (unsigned char)c)
 			i = n;
 		n++;
 	}
-	if (!(s[n]) && i != 0)
+	if (!(s[n]) && i >= 0)
 		return (&s[i]);
-	if (c == '\0')
+	if ((unsigned char)c == '\0')
 	{
 		i = n;
-		return (&s[i + 1]);
+		return (&s[i]);
 	}
 	return (0);
 }

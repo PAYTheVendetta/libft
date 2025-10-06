@@ -6,36 +6,58 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 17:54:02 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/01 15:57:26 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/06 20:17:24 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlcat(char *dst, const char *src, unsigned long dstsize)
+//
+
+#include "libft.h"
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	unsigned long	n;
-	unsigned long	i;
+	size_t	n;
+	size_t	i;
+	size_t	lonsrc;
 
 	n = 0;
 	i = 0;
+	lonsrc = ft_strlen(src);
 	while (dst[n])
 		n++;
+	if (dstsize <= n)
+		return (dstsize + lonsrc);
 	while (src[i])
 	{
-		if (dstsize != 0 && !(dstsize <= n))
+		if (dstsize != 0)
 		{
-			if (dstsize > (n + i))
+			if (dstsize > (n + i + 1))
 				dst[n + i] = src[i];
-			else if (dst[dstsize - 1] != '\0')
-				dst[dstsize - 1] = '\0';
+			else
+				break ;
 		}
 		i++;
 	}
-	if (dstsize != 0 && !(dstsize <= n))
-	{
-		if (dst[dstsize - 1] != '\0')
-			dst[dstsize - 1] = '\0';
-	}
-	else if (dstsize <= n)
-		return (dstsize + i);
-	return (n + i);
+	if (dstsize >= n + i)
+		dst[n + i] = '\0';
+	return (n + lonsrc);
 }
+/* 
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+	char *str = "abcdefghi";
+ 	char buff1[0xF00] = "pqrs";
+ 	char buff2[0xF00] = "pqrs";
+ 	size_t max = 10;
+ 
+	//strlcat(buff1, str, max);
+ 	ft_strlcat(buff2, str, max);
+	
+	//printf("strlcat   : %s", buff1);
+	printf("ft_strlcat: %s", buff2);
+
+
+	return 0;
+} */
