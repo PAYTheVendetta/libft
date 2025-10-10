@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 16:41:46 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:50 by aialonso         ###   ########.fr       */
+/*   Created: 2025/10/07 14:46:20 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/08 15:00:36 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Te dice si es un carácter, si no, te devuelve cero.
+//Convierte si puede el carácter en mayúscula.
 
-int	ft_isalpha(int c)
+int	ft_toupper(int c)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	if (c >= 97 && c <= 122)
+		c -= 32;
+	return (c);
 }
-
-// int	main(void)
-// {
-// 	printf("%d", ft_isalpha('6'));
-// 	return (0);
-// }

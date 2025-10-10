@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 16:41:46 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:50 by aialonso         ###   ########.fr       */
+/*   Created: 2025/10/09 16:42:00 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/09 17:28:40 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Te dice si es un carácter, si no, te devuelve cero.
+#include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
-}
+	size_t	len;
+	char	*con;
 
-// int	main(void)
-// {
-// 	printf("%d", ft_isalpha('6'));
-// 	return (0);
-// }
+	if (!s1 || !s2)
+		return (NULL);
+	len = 1 + ft_strlen(s1) + ft_strlen(s2);
+	con = malloc(len * sizeof(char));
+	if (con == NULL)
+		return (NULL);
+	ft_strlcpy(con, s1, ft_strlen(s1) + 1);
+	ft_strlcat(con, s2, len);
+	return (con);
+}

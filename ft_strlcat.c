@@ -6,11 +6,12 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/12 17:54:02 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/06 20:17:24 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/07 14:43:52 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//
+//Concatena dst y src en dst teniendo en
+//cuenta el size o tamaño final de la cadena.
 
 #include "libft.h"
 

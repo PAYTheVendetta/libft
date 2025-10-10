@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 16:41:46 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:50 by aialonso         ###   ########.fr       */
+/*   Created: 2025/10/08 16:39:56 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/08 17:27:19 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Te dice si es un carácter, si no, te devuelve cero.
+//Reserva memoria y la inicializa a cero. 
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	*ft_calloc(size_t nmemb, size_t size)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
-}
+	void	*pre;
 
-// int	main(void)
-// {
-// 	printf("%d", ft_isalpha('6'));
-// 	return (0);
-// }
+	pre = malloc(nmemb * size);
+	if (pre == NULL)
+		return (NULL);
+	ft_bzero(pre, (nmemb * size));
+	return (pre);
+}

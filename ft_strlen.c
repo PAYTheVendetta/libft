@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 20:46:09 by aitor             #+#    #+#             */
-/*   Updated: 2025/10/06 19:08:59 by aialonso         ###   ########.fr       */
+/*   Created: 2025/08/07 20:46:09 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/09 16:09:21 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ size_t	ft_strlen(const char *s)
 
 	cont = 0;
 	while (s[cont])
-	{
 		cont++;
-	}
 	return (cont);
 }
 

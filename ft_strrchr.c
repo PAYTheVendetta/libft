@@ -6,12 +6,12 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:48:27 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/06 20:31:15 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/08 15:02:27 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Busca en una cadena el último carácter que encuentre
-//y devuelve la posición de ese carácter; si no, devuelve cero.
+//y devuelve la posición de ese carácter, si no, devuelve cero.
 
 const char	*ft_strrchr(const char *s, int c)
 {

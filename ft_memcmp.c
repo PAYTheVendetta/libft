@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/07 16:41:46 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:50 by aialonso         ###   ########.fr       */
+/*   Created: 2025/10/07 16:39:14 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/08 15:03:39 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Te dice si es un carácter, si no, te devuelve cero.
+//Comprueba si los string son iguales.
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
+	size_t	i;
+
+	i = 0;
+	while (n > i)
+	{
+		if (((unsigned char *)s1)[i] != ((unsigned char *)s2)[i])
+		{
+			return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+		}
+		i++;
+	}
 	return (0);
 }
-
-// int	main(void)
-// {
-// 	printf("%d", ft_isalpha('6'));
-// 	return (0);
-// }
