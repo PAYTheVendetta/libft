@@ -6,13 +6,13 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 15:43:49 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/06 20:24:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/14 18:24:46 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Busca en una cadena el primer
 //carácter que encuentre 
-//y devuelve la posición de ese carácter; si no, devuelve cero.
+//y devuelve la posición de ese carácter si no, devuelve cero.
 
 const char	*ft_strchr(const char *s, int c)
 {

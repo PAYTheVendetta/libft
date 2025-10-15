@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 18:10:28 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/09 16:40:33 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/11 14:01:00 by aitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Se encarga de crear una copia de la cadena que recibe, pero teniendo en cuenta
+//la longitud máxima que puede copiar y el punto del que va a empezar a copiar. 
 
 #include "libft.h"
 

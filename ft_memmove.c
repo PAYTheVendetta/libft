@@ -6,7 +6,7 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 19:34:06 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:03:20 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/15 16:04:21 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*d;
 	char	*s;
 
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	i = 0;
 	d = (char *)dst;
 	s = (char *)src;

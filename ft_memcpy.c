@@ -6,7 +6,7 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 16:00:33 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:03:18 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/15 16:04:45 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*d;
 	char	*s;
 
+	if (!dst && !src)
+		return (NULL);
 	i = 0;
 	d = (char *)dst;
 	s = (char *)src;

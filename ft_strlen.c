@@ -6,7 +6,7 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:46:09 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/09 16:09:21 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	cont;
+	size_t	count;
 
-	cont = 0;
-	while (s[cont])
-		cont++;
-	return (cont);
+	count = 0;
+	while (s[count])
+		count++;
+	return (count);
 }
 
 // int	main(void)

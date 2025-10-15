@@ -1,32 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/07 15:39:10 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 15:05:24 by aialonso         ###   ########.fr       */
+/*   Created: 2025/10/15 13:20:53 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Comprueba si en el texto o string está
-//un carácter dependiendo de una cantidad de caracteres. 
-
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),	void (*del)(void *))
 {
-	size_t	i;
+	t_list	*newlist;
+	t_list	*test;
 
-	i = 0;
-	while (n > i)
+	if (!lst || !f || !del)
+		return (NULL);
+	newlist = ft_lstnew(f(lst->countent));
+	if (!newlist)
+		return (NULL);
+	while (lst->next != NULL)
 	{
-		if (((unsigned char *)s)[i] == (unsigned char)c)
+		lst = lst->next;
+		test = ft_lstnew(f(lst->countent));
+		if (!test)
 		{
-			return ((void *)(s + i));
+			ft_lstclear(&newlist, del);
+			return (NULL);
 		}
-		i++;
+		ft_lstadd_back(&newlist, test);
 	}
-	return ((void *)0);
+	return (newlist);
 }

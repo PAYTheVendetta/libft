@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: aitor <aitor@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 16:42:00 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/09 17:28:40 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/11 14:03:17 by aitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//Concatena dos string en un nuevo puntero, reservando memoria para ello.
 
 #include "libft.h"
 
