@@ -6,7 +6,7 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 17:05:15 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/16 12:26:54 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	b = *lst;
 	while (b)
 	{
-		del(b->countent);
+		del(b->content);
 		*lst = (*lst)->next;
 		free(b);
 		b = *lst;

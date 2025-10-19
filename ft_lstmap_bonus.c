@@ -6,7 +6,7 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 13:20:53 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/16 12:27:10 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),	void (*del)(void *))
 
 	if (!lst || !f || !del)
 		return (NULL);
-	newlist = ft_lstnew(f(lst->countent));
+	newlist = ft_lstnew(f(lst->content));
 	if (!newlist)
 		return (NULL);
 	while (lst->next != NULL)
 	{
 		lst = lst->next;
-		test = ft_lstnew(f(lst->countent));
+		test = ft_lstnew(f(lst->content));
 		if (!test)
 		{
 			ft_lstclear(&newlist, del);
