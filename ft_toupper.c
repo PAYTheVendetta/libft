@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 14:46:20 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 15:00:36 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:36:02 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Convierte si puede el carácter en mayúscula.
 
 int	ft_toupper(int c)
 {

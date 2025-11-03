@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 16:41:46 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:50 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:06 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Te dice si es un carácter, si no, te devuelve cero.
 
 int	ft_isalpha(int c)
 {

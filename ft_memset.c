@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 18:21:40 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:03:23 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:57 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Se encarga de rellenar un array con caracteres.
 
 #include "libft.h"
 

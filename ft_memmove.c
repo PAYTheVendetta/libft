@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 19:34:06 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 16:04:21 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:53 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Copia en destino, lo que haya en SRC asegurando que se copie bien.
 
 #include "libft.h"
 

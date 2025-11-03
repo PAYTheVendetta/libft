@@ -6,12 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 17:00:14 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:35:41 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Busca una palabra en un test y
-//dependiendo de cuantos caracteres quiere que mire. 
 
 #include "libft.h"
 

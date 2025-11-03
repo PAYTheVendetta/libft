@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:34:24 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:47 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:33:59 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Te dice si es un dígito o un carácter, si no te devuelve cero.
 
 int	ft_isalnum(int c)
 {

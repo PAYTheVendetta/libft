@@ -6,16 +6,13 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:02:02 by aialonso          #+#    #+#             */
-/*   Updated: 2025/11/01 15:06:46 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:23 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Convierte un int en un char reservando memoria para ello,
-//es decir, yo tengo 236 de vuelve un "236".
-
 #include "libft.h"
 
-static int	lennun(int n)
+int	lennun(int n)
 {
 	int		count;
 
@@ -28,7 +25,7 @@ static int	lennun(int n)
 	return (count + 1);
 }
 
-static char	*training(long n, int count, char *num)
+char	*training(long n, int count, char *num)
 {
 	while (count >= 0 && num[count] != '-')
 	{

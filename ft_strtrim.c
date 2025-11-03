@@ -6,13 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/09 17:36:58 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:35:50 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Corta una cadena y utiliza los caracteres de otra cadena para delimitar el
-//corte tanto del principio de la cadena como del final, acortando la cadena
-//por el centro.
 
 #include "libft.h"
 

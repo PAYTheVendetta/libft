@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:02:02 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 17:26:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:35:06 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Divide una cadena en dos utilizando un carácter como punto de corte.
 
 #include "libft.h"
 

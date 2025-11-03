@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 16:39:56 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/15 17:23:48 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:33:54 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Reserva memoria y la inicializa a cero. 
 
 #include "libft.h"
 

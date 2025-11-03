@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 16:39:14 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 15:03:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:44 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Comprueba si los string son iguales.
 
 #include "libft.h"
 

@@ -6,14 +6,11 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/29 19:48:27 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 15:02:27 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:37:15 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Busca en una cadena el último carácter que encuentre
-//y devuelve la posición de ese carácter, si no, devuelve cero.
-
-const char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	n;
 	int	i;
@@ -27,11 +24,11 @@ const char	*ft_strrchr(const char *s, int c)
 		n++;
 	}
 	if (!(s[n]) && i >= 0)
-		return (&s[i]);
+		return (&((char *)s)[i]);
 	if ((unsigned char)c == '\0')
 	{
 		i = n;
-		return (&s[i]);
+		return (&((char *)s)[i]);
 	}
 	return (0);
 }

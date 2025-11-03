@@ -6,12 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/07 15:39:10 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 15:05:24 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:39 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Comprueba si en el texto o string está
-//un carácter dependiendo de una cantidad de caracteres. 
 
 #include "libft.h"
 

@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 13:51:53 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:02:39 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:33:50 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Se encarga de rellenar un array con ceros.
 
 #include "libft.h"
 

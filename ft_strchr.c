@@ -6,15 +6,11 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 15:43:49 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/14 18:24:46 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:38:17 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Busca en una cadena el primer
-//carácter que encuentre 
-//y devuelve la posición de ese carácter si no, devuelve cero.
-
-const char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	n;
 
@@ -22,10 +18,10 @@ const char	*ft_strchr(const char *s, int c)
 	while (s[n])
 	{
 		if (s[n] == (unsigned char)c)
-			return (&s[n]);
+			return (&((char *)s)[n]);
 		n++;
 	}
 	if ((unsigned char)c == '\0')
-		return (&s[n]);
+		return (&((char *)s)[n]);
 	return (0);
 }

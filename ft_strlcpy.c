@@ -6,12 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/10 19:14:04 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:03:30 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:35:27 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Copia en destino, lo que haya en SRC
-//teniendo en cuenta una longitud máxima y terminando en nulo
 
 #include "libft.h"
 

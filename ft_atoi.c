@@ -6,12 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:02:02 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 14:58:15 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:33:46 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Se encarga de devolverte un número de una cadena
-//dependiendo de los primeros dígitos de esa cadena.
 
 #include "libft.h"
 

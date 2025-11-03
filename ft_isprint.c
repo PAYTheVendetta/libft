@@ -6,11 +6,9 @@
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/07 20:41:01 by aialonso          #+#    #+#             */
-/*   Updated: 2025/10/08 12:03:12 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/10/21 17:34:19 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//Te dice si es un carácter printable; si no, te devuelve cero.
 
 int	ft_isprint(int c)
 {
