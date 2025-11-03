@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_ptoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/12 19:42:43 by aialonso          #+#    #+#             */
-/*   Updated: 2025/11/03 14:02:06 by aialonso         ###   ########.fr       */
+/*   Created: 2025/11/01 17:06:29 by aialonso          #+#    #+#             */
+/*   Updated: 2025/11/01 17:21:22 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	ft_ptoa(void *address)
 {
-	size_t	n;
+	size_t	count;
+	ssize_t	num;
 
-	n = 0;
-	if (!s)
-		return (n);
-	while (s[n])
-	{
-		write(fd, &s[n], 1);
-		n++;
-	}
-	free(s);
-	return (n);
+	num = (ssize_t)address;
+	count = ft_putstr_fd("0x", 1);
+	count = count + ft_putstr_fd(ft_up_hetoa(num), 1);
+	return (count);
 }

@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_strcchar.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/12 19:42:43 by aialonso          #+#    #+#             */
-/*   Updated: 2025/11/03 14:02:06 by aialonso         ###   ########.fr       */
+/*   Created: 2025/10/31 18:49:38 by aialonso          #+#    #+#             */
+/*   Updated: 2025/10/31 19:10:41 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putstr_fd(char *s, int fd)
+int	ft_strcchar(char *text, int c)
 {
 	size_t	n;
+	size_t	count_arg;
 
 	n = 0;
-	if (!s)
-		return (n);
-	while (s[n])
+	count_arg = 0;
+	if (!text || !c)
+		return (0);
+	while (text[n])
 	{
-		write(fd, &s[n], 1);
+		if (text[n] == c)
+		{
+			count_arg++;
+		}
 		n++;
 	}
-	free(s);
-	return (n);
+	return (count_arg);
 }

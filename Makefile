@@ -6,7 +6,7 @@
 #    By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/07 13:18:47 by aialonso          #+#    #+#              #
-#    Updated: 2025/10/19 12:03:38 by aialonso         ###   ########.fr        #
+#    Updated: 2025/11/01 17:55:03 by aialonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SOURCES =   ft_isalpha.c\
 			ft_putchar_fd.c\
 			ft_putstr_fd.c\
 			ft_putendl_fd.c\
-			ft_putnbr_fd.c 
+			ft_putnbr_fd.c
 	
 SOURCESB =  ft_lstnew_bonus.c\
 			ft_lstadd_front_bonus.c\
@@ -57,13 +57,21 @@ SOURCESB =  ft_lstnew_bonus.c\
 			ft_lstiter_bonus.c\
 			ft_lstmap_bonus.c
 
-FLAGS = -Wall -Wextra -Werror
+MISSOURCES = ft_utoa.c\
+			 ft_up_hetoa.c\
+			 ft_lo_hetoa.c\
+			 ft_ptoa.c\
+			 ft_strcchar.c
+
+FLAGS = -Wall -Wextra -Werror -g
 
 CC = cc
 
 OBJECTS= $(SOURCES:.c=.o)
 
 OBJECTSB= $(SOURCESB:.c=.o)
+
+MISOBJECTS= $(MISSOURCES:.c=.o)
 
 all: $(NAME)
 
@@ -79,14 +87,10 @@ bonus:
 clean:
 	rm -f $(OBJECTS) $(OBJECTSB)
 	
-cleanb:
-	rm -f $(OBJECTS) $(OBJECTSB)
-	
 fclean: clean
 	rm -f $(NAME)
 
-re: fclean all cleanb
+re: fclean all
 
-comp: re
-	$(CC) main.c $(NAME) -o librari
-	./librari
+comp: 
+	@make re SOURCES="${SOURCES} ${SOURCESB} ${MISSOURCES}"

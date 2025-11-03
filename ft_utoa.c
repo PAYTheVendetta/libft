@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_utoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aialonso <aialonso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/08 12:02:02 by aialonso          #+#    #+#             */
-/*   Updated: 2025/11/01 15:06:46 by aialonso         ###   ########.fr       */
+/*   Updated: 2025/11/01 15:11:31 by aialonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "libft.h"
 
-static int	lennun(int n)
+static int	lennun(unsigned int n)
 {
 	int		count;
 
@@ -39,7 +39,7 @@ static char	*training(long n, int count, char *num)
 	return (num);
 }
 
-char	*ft_itoa(int n)
+char	*ft_utoa(unsigned int n)
 {
 	char	*num;
 	long	nlon;
